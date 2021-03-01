@@ -17,9 +17,6 @@ const express = require("express")
   app.use('/static',express.static(__dirname + '/public'))
 
 
-
- 
-
 app.post('/cadNome',function(req,res){
     nomeCadastro.create({
         nome:req.body.nome
