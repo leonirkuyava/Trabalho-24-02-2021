@@ -1,0 +1,33 @@
+<title>Update</title>
+
+<br><br><br>
+ 
+<h2>Uptade</h2>
+
+	<form action="/updateNome" method="POST">
+	<div class="container" >
+		{{#each nome}}
+        <div class="form-row">
+			<div class="form-group col-md-1">
+					<input type="text"  class="form-control" readonly="true" name="id" value={{id}}	>
+			</div>
+		</div>
+        	
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<input type="text"  class="form-control" placeholder="Nome Completo" name="nome" value={{nome}} >
+			</div>
+		</div>
+
+      	<div class="form-row">
+			<div class="form-group ">
+				<button type="submit" class="btn btn-primary botao">Salvar</button>
+			</div>
+		</div>
+	
+	 </div>		
+	</form>
+    	{{/each}}
+		<br><br><br><br><br>
+ 
+	
